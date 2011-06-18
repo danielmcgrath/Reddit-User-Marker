@@ -4,9 +4,9 @@
 		markTemplate = '<a href="#" class="mark-user mark-{USER_NAME}">Mark user</a>';
 
 	var markUser = function (e) {
-		e.preventDefault();
 		var link = e.target;
 		if (link.className.indexOf('mark-user') !== -1) {
+			e.preventDefault();
 			var targetClass = link.className.split(' ')[1],
 				otherPosts = commentsList.getElementsByClassName(targetClass),
 				postLen = otherPosts.length;
