@@ -1,7 +1,7 @@
 (function () {
 	var commentsList = null,
 		clonedList = null,
-		markTemplate = '<a href="#" class="mark-user mark-{USER_NAME}">Mark user</a>';
+		markTemplate = '<a href="#" class="mark-user mark-{USER_NAME}">Distinguish user</a>';
 
 	var markUser = function (e) {
 		var link = e.target;
