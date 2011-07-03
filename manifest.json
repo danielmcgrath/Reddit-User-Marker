@@ -1,0 +1,16 @@
+{
+	"name": "Reddit User Marker",
+	"version": "0.5",
+	"description": "Mark a user's comments so they stand out through a reddit discussion thread if you are interested in seeing what they have to say.",
+	"content_scripts": [{
+		"matches": ["http://www.reddit.com/r/*/comments/*"],
+		"css": ["userMarkerStyle.css"],
+		"js": ["main.js"],
+		"run_at": "document_end"
+	}],
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	}
+}
